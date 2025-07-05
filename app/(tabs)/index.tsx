@@ -22,6 +22,8 @@ export default function Index() {
         <CartButton />
     </View>
       )}
+
+      
        data={offers} renderItem={({item,index})=>{
         const isEven = index % 2 === 0;
         return (<View>
@@ -42,7 +44,6 @@ export default function Index() {
         </View>)
       }} 
       contentContainerClassName="pb-28 px-5"
-
       />
     </SafeAreaView>
   );
